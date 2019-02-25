@@ -2,17 +2,17 @@ require 'test_helper'
 
 class WineControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
-    get wine_home_url
+    get root_path
     assert_response :success
   end
 
   test "should get about" do
-    get wine_about_url
+    get about_path
     assert_response :success
   end
 
   test "should get join" do
-    get wine_join_url
+    get join_path
     assert_response :success
   end
 
